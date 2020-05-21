@@ -5,8 +5,9 @@
   "description": "Simple application to check if an address is inside a polygon",
   "scripts": {
     "build": "webpack -p",
+    "build:local": "webpack --config webpack.dev.js --progress --colors",
+    "build:local:watch": "webpack --watch --config webpack.dev.js --progress --colors",
     "start": "node server.js",
-    "start:local": "webpack --watch --config webpack.dev.js --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dawn Richardson",
