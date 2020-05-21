@@ -9,7 +9,7 @@ https://polycheck.herokuapp.com/
 - The app will load up a random polygon and show it on the map.
 - Search for an address and the map will show a marker at your chosen address and display if it is contained within the randomly loaded polygon.
 - You can search again for a different address or refresh the page to choose a different polygon (although note there are currently only 3 polygons in the "database", so you may get the same one twice!)
-- Note the app is written using newer ES6 features without polyfills and may not run in older IE browsers.
+- Note the app is written using newer ES6 features, without polyfills, and won't run in older browsers like IE.
 
 ### Development
 
@@ -23,7 +23,7 @@ The app provides a publically accessible `GET /polygon` endpoint, which can be a
   "coordinates": [
     {
       "lng": <longitude>,
-      "lat":  <longitude>
+      "lat":  <latitude>
     },
     ...
   ]
