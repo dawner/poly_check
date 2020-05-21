@@ -12,13 +12,20 @@
     </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <input id="searchTextField" type="text" size="50" placeholder="Type an address..." />
-    <div id="addressResult"></div>
+    <h1>Polygon Checker</h1>
+    <h4>Search for an address to see if it's inside the polygon: <span id="polygonName">Loading...</span></h4>
+    <div>
+      <input id="searchTextField" type="text" size="50" placeholder="Type an address..." />
+    </div>
+
+    <div id="results" style="display: none;">
+      Address: <span id="addressResult"></span><br />
+      Is in polygon: <span id="polygonAnswer"></span>
+    </div>
 
     <div id="map"></div>
 
-    <div id="polyCheck"></div>
+    <em>Refresh the page to try a new polygon</em>
 
     <script src="main.js"></script>
   </body>

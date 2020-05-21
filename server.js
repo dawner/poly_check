@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
 
 app.get("/polygon", function (req, res) {
   let randomPolygon = Math.floor(Math.random() * Math.floor(polygons.length))
+  // TODO validation
   res.send(polygons[randomPolygon])
 })
 
